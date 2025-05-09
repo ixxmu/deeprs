@@ -37,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="auto" suppressHydrationWarning>
       <head>
+        <meta httpEquiv="Content-Security-Policy" content="frame-ancestors 'self' *" />
         {HEAD_SCRIPTS ? <Script id="headscript">{HEAD_SCRIPTS}</Script> : null}
         <Debugger />
       </head>
