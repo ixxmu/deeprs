@@ -20,16 +20,6 @@ function Header() {
           </h1>
         </a>
         <div className="flex">
-          <a href="https://github.com/u14app/deep-research" target="_blank">
-            <Button
-              className="h-8 w-8"
-              title={t("openSource")}
-              variant="ghost"
-              size="icon"
-            >
-              <Github className="h-5 w-5" />
-            </Button>
-          </a>
           <Button
             className="h-8 w-8"
             variant="ghost"
