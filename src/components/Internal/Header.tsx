@@ -16,6 +16,7 @@ function Header() {
         <a href="https://github.com/u14app/deep-research" target="_blank">
           <h1 className="text-left text-xl font-semibold">
             {t("title")}
+             <small className="ml-2 font-normal text-base">v{VERSION}</small>
           </h1>
         </a>
         <div className="flex">
