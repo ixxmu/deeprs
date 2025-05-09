@@ -42,6 +42,24 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_VERSION: pkg.version,
   },
+    // 添加以下headers配置  
+  async headers() {  
+    return [  
+      {  
+        source: '/:path*',  
+        headers: [  
+          {  
+            key: 'X-Frame-Options',  
+            value: 'ALLOWALL'  // 允许所有网站嵌入  
+          },  
+          {  
+            key: 'Content-Security-Policy',  
+            value: "frame-ancestors 'self' *"  // 允许所有网站嵌入  
+          }  
+        ],  
+      },  
+    ]  
+  }, 
   transpilePackages: ["pdfjs-dist", "mermaid"],
 };
 
