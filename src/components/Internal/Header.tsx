@@ -23,7 +23,7 @@ function Header() {
           <a href="https://github.com/u14app" target="_blank">
             <Button
               className="h-8 w-8"
-              title={t("openSource")}
+              title={t("DeepResearch")}
               variant="ghost"
               size="icon"
             >
